@@ -6,6 +6,8 @@ import NotFoundScreen from './screens/404.screen'
 import Screen from './components/screen';
 import Cookies from 'universal-cookie';
 import {ROUTES} from'./constants/routes/main.route'
+import configStore from './store'
+
 function main() {
   return (
     <Suspense fallback={<LoadingScreen />}>
