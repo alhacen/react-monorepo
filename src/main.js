@@ -1,12 +1,10 @@
 import React, {Suspense,useState,useEffect } from 'react';
 import {Route, Switch, withRouter,useHistory} from 'react-router-dom';
-import LoadingScreen from './screens/loading.screen';
-import './App.css';
-import NotFoundScreen from './screens/404.screen'
+import LoadingScreen from './screens/loading.screen.js';
+import NotFoundScreen from './screens/404.screen.js'
 import Screen from './components/screen';
 import Cookies from 'universal-cookie';
 import {ROUTES} from'./constants/routes/main.route'
-import configStore from './store'
 
 function main() {
   return (

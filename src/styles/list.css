@@ -1,0 +1,31 @@
+.ex_class_floatRight{float:right}
+.ex_class_list{
+  width:900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ex_class_title {
+  font-size: 40px;
+  padding:10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.ex_class_listValue {
+  font-size: 20px;
+  padding:05px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.card{padding-bottom:40px}
+.p25{padding:25px}
+.ex_class_listTextbox {
+  font-size: 32px;
+  padding: 2px;
+  width: 780px;
+  text-align: center;
+  margin-right: 8px;
+}
+.ex_class_listAddbutton{width:100px}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

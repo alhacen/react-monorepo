@@ -14,6 +14,6 @@ export const ROUTES = [
   {
     path: HOME_PATH,
     title: 'Welcome',
-    screen: lazy(() => import('../../screens/home.screen')),
+    screen: lazy(() => import('../../screens/home.screen.js')),
   },
 ];
