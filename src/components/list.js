@@ -7,7 +7,7 @@ import {
   fetchList,
   addItem,
   removeItem,
-} from '../reducers/listSlice';
+} from '../utils/redux/reducers/listSlice';
 
 import  '../styles/list.css'
 
@@ -33,13 +33,33 @@ const List = () => {
     return(
     <div className="ex_class_list card">
       <p  className="ex_class_title" >List</p>
-      <input type="text"  className="ex_class_listTextbox" onChange={(e)=>{setInputValue(e.target.value)}} placeholder="" value={inputValue} />
-      <input type="button" className="ex_class_button ex_class_listAddbutton" value="Add" onClick={()=>{handleSave(inputValue)}} />
+      <input 
+        type="text"  
+        className="ex_class_listTextbox" 
+        onChange={(e)=>{setInputValue(e.target.value)}} 
+        placeholder="" 
+        value={inputValue} 
+      />
+      <input 
+        type="button" 
+        className="ex_class_button ex_class_listAddbutton"
+        value="Add" 
+        onClick={()=>{handleSave(inputValue)}} 
+      />
       <ul>
         {
           listStatus==='loading'?'loading...':
           list.map((list,index)=>{
-            return(<li key={index} className="ex_class_listValue">{list.title}<a href="#" className="ex_class_floatRight" onClick={()=>removeFromList(index)}>x</a></li>)
+            return(
+            <li key={index} className="ex_class_listValue">
+              {list.title}
+              <span 
+                className="ex_class_floatRight" 
+                onClick={()=>removeFromList(index)} 
+                style={{'cursor':'pointer'}}>
+                  x
+              </span>
+            </li>)
           })
         }
       </ul>

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 
 import {
@@ -7,7 +7,7 @@ import {
   incrementByAmount,
   incrementAsync,
   selectCount,
-} from '../reducers/counterSlice';
+} from '../utils/redux/reducers/counterSlice';
 
 import '../styles/counter.css'
 
