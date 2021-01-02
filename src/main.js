@@ -6,7 +6,7 @@ import Screen from './components/screen';
 // import Cookies from 'universal-cookie';
 import {ROUTES} from'./constants/routes/main.route'
 
-function main() {
+function Main() {
   return (
     <Suspense fallback={<LoadingScreen />}>
         <main>
@@ -27,4 +27,4 @@ function main() {
     </Suspense>
   );
 }
-export default main;
+export default Main;
