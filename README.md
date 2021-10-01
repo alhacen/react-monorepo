@@ -29,10 +29,9 @@ At this point you can run npm start to see the example app at http://localhost:3
 - [x] decide project structure
 - [x] setup react-router
 - [x] setup redux
+- [x] setup jedisdb
+- [x] setup tailwind
 - [x] install important modules
-- [ ] handle form logic
-
-- [ ] Doc 
 
 
 # Show your support

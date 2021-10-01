@@ -5,6 +5,7 @@ import NotFoundScreen from './screens/404.screen.js'
 import Screen from './components/screen';
 // import Cookies from 'universal-cookie';
 import {ROUTES} from'./constants/routes/main.route'
+import useJedis from "jedisdb";
 
 function Main() {
   return (
